@@ -1,0 +1,20 @@
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin-top: 7vh;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(207, 221, 207);
+}
+
+body > *{
+    text-align: center;
+    justify-content: center;
+
+}
+
+#title{
+
+}
