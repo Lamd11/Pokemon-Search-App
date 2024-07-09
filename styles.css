@@ -2,19 +2,53 @@ html {
     font-family:Arial, Helvetica, sans-serif;
 }
 
-body{
-    margin-top: 7vh;
+body {
     height: 100%;
     width: 100%;
-    background-color: rgb(207, 221, 207);
-}
-
-body > *{
-    text-align: center;
+    background-color: #cfddcf;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    align-items: center;
+    margin: 0;
 }
 
-#title{
+#title {
+    color: #302230;
+    margin-top: 7vh;
+}
 
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 450px;
+    background-color: #F9FAF7;
+    box-shadow: 0.5vw 1.5vh #DDE8C6;
+    box-sizing: border-box;
+}
+
+#search-container {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#search-input {
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#search-input:focus {
+    outline: none !important;
+    border: 2px solid #7CAB7C;
+    box-shadow: 0 0 10px #7CAB7C;
+}
+
+#search-button {
+    background-color: #cfddcf;
+    padding: 15px;
+    border: 0;
+    border-radius: 40%;
 }
