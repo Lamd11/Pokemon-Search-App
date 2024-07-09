@@ -29,15 +29,15 @@ const fetchData = async (searchValue) =>{
 
 const showOutput = (data) =>{
 
-    pokemonName.textContent = `${data.name}`;
-    pokemonId.textContent = `${data.id}`;
-    weight.textContent = `${data.weight}`;
-    height.textContent = `${data.height}`;
+    pokemonName.textContent = `${data.name.toUpperCase()}`;
+    pokemonId.textContent = `#${data.id}`;
+    weight.textContent = `Weight: ${data.weight}`;
+    height.textContent = `Height: ${data.height}`;
     
     imageContainer.innerHTML = `<img id="sprite" src="${data.sprites.front_default}" alt="${data.name}"/>`
     
     types.innerHTML = data.types.map((object) =>
-        `<span class="${object.type.name}">${object.type.name}</span>`
+        `<span class="type ${object.type.name}">${object.type.name.toUpperCase()}</span>`
     ).join(``)
 
     hp.textContent = data.stats[0].base_stat;
